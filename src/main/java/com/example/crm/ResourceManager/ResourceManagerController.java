@@ -24,12 +24,12 @@ public class ResourceManagerController {
     }
 
     @GetMapping
-    public List<ResourceManager> getAllResourceManagers() {
+    public List<ResourceManagerEntity> getAllResourceManagers() {
         return resourceManagerService.getAllResourceManagers();
     }
 
     @PostMapping(path = "/add")
-    public void createResourceManager(@RequestBody ResourceManager resourceManager) {
+    public void createResourceManager(@RequestBody ResourceManagerEntity resourceManager) {
         resourceManagerService.createResourceManager(resourceManager);
 
     }

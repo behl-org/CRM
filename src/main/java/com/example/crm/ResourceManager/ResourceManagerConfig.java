@@ -10,7 +10,7 @@ public class ResourceManagerConfig {
     CommandLineRunner commandLineRunner(
             ResourceManagerRepository repository) {
         return args -> {
-            ResourceManager rootUser = new ResourceManager(
+            ResourceManagerEntity rootUser = new ResourceManagerEntity(
                     "root",
                     "root@gmail.com",
                     "passsword");
