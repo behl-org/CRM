@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ResourceManagerConfig {
-    @Bean
+    @Bean(name = "oneBean")
     CommandLineRunner commandLineRunner(
             ResourceManagerRepository repository) {
         return args -> {
