@@ -19,6 +19,9 @@
     - In properties file spring.datasource.url=jdbc:postgresql://localhost:5432/{{YOUR DATABASE NAME}}
     - Table creation and Entries will be taken up by JPA
 
+    -For Data API's
+        Create a db named as crm_data for the data and update the application.properties
+
 # API's
 
     -GET http://localhost:8080/api/resources
